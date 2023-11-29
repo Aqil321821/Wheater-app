@@ -7,7 +7,7 @@ var key = "JbWG0Mn9Z5TtDp2Wbd1RG55xFNKlAT3n";
 
 //getcity se jo aa raha ha usko is me get krke api se mosam ka haal lelo
 var getwheather = async (id) => {
-    var base = 'http://dataservice.accuweather.com/currentconditions/v1/'
+    var base = 'https://dataservice.accuweather.com/currentconditions/v1/'
     var query = `${id}?apikey=${key}`;
     var response = await fetch(base + query);
     var data = await response.json();
